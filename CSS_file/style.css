@@ -56,7 +56,6 @@ body{
        height:100%; /* side bar er length control kore */
        /*ei side bar er height e koto tuku space free korbe control kore */
        background-color: black;
-       opacity: 1;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -389,10 +388,25 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
     }
     
     .mobil{
-       margin-left: -4000px;
+       margin-right: auto;
     }
 
-
+    .slidek{
+        width: 60% !important;
+        opacity: 0.8;
+        z-index: 1 !important;
+    }
+    .random{
+        z-index:5;
+    }
+    .bg{
+        transition: 0.5s ease;
+        background-color: black;
+    }
+      .bg.scrolled {
+          background-color: black;
+          opacity: 1;
+      }
   }
 
   @media screen and (min-width: 501px) and ( max-width:600px) {
@@ -409,7 +423,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
     }
 
     .btn{
-        width:25%;
+        width:28%;
     }
     .place{
         width:60%;
